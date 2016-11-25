@@ -1,0 +1,62 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <script src="{% static 'todo.js' %}"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}style.css">
+</head>
+<body>
+    <header>
+        {% block login %}
+            <div class="header-container ">
+            <div class="logo"><img src="{% static "img/wishlistlogo.png" %}" width="290px"/></div>
+                <form id="login-form" action="{% url 'login' %}" method="post">{% csrf_token %}
+                    <div class="button-header"><input type="submit" class="button" value="LOG IN"></div>
+                    <div class="login-fields">
+                        {{ auth_form.password }}
+                        {{ auth_form.username }}
+                    </div>
+                </form>
+            </div>
+        {% endblock %}
+    </header>
+
+    <div class="error">
+        {% block errors %}
+        {% if auth_form.non_field_errors %}
+            {{ auth_form.non_field_errors }}
+        {% endif %}
+        {% endblock %}
+    </div>
+
+
+
+    {% block content %}
+        <div class="title-button">
+        <div class="title-wish-list">NEW TO<br>WISHLIST?</div>
+        <div id="new-to-wishlist"><img id="show" src="{% static "img/slide-down.png" %}" width="76px"/></div>
+        </div>
+        <div id="register-form">
+        <div class="signupbox">
+            {% block register %}
+                <div class="signupfields-container">
+                <form action="{% url 'signup' %}" method="post">{% csrf_token %}
+                    {% for field in user_form %}
+                    {{ field }}
+                    {% endfor %}
+                    <div class="signup-button"><input type="submit" class="button" value="CREATE ACCOUNT "></div>
+                </form>
+                </div>
+            {% endblock %}
+        </div>
+        </div>
+    {% endblock content %}
+
+
+<footer>&copy; ISIVI 2016</footer>
+</body>
+</html>

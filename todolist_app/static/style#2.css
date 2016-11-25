@@ -1,0 +1,434 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: lightgray;
+}
+
+header {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+
+footer{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#triangle-up {*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-left: 10px solid transparent;*/
+    /*border-right: 10px solid transparent;*/
+    /*border-bottom: 20px solid white;*/
+/*}*/
+
+/*#triangle-down {*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-left: 10px solid transparent;*/
+    /*border-right: 10px solid transparent;*/
+    /*border-top: 20px solid white; */
+/*}*/
+
+form#login-form {
+    overflow: auto;
+}
+
+/*#usr-padd {*/
+    /*padding-right: 5px;*/
+/*}*/
+
+.login-field {
+    border: solid;
+    border-color: #bbccdd;
+    height: 30px;
+    width: 175px;
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+}
+
+.login-fields {
+    height: 80px;
+    float: right;
+    padding-top: 21px;
+}
+
+.logo {
+    height: 80px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.username-header {
+    width: 130px;
+    height: 80px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    /*text-align: center;*/
+}
+
+
+.avatar-header {
+    width: 80px;
+    height: 80px;
+    border: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.wishpoints {
+    width: 160px;
+    height: 80px;
+    font-size: 20px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 15px 50px;
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid dimgray;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.button:hover {
+  background-color: bisque;
+}
+
+.button-header {
+    height: 80px;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 40px;
+}
+
+#container {
+    overflow:hidden;
+}
+
+.task-box {
+    width: 900px;
+    height: 100px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+form#add-wish {
+    overflow: auto;
+}
+
+.center-button {
+    width: 100%;
+    text-align: center;
+}
+
+.center-taskbox {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.break {
+    height: 25px;
+}
+
+.break2 {
+    height: 50px;
+}
+
+.title-wish-list {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.tasks {
+    padding-top: 20px;
+    width: 1410px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.username {
+    width: 180px;
+    height: 60px;
+    color: #003366;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.username.username2 {
+    color: tomato;
+    background-color: rgba(153, 153, 153, 0.38);
+
+}
+
+.task_text {
+    width: 850px;
+    height: 60px;
+    color: #003366;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+.task_text.task_text2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+    background-color: rgba(153, 153, 153, 0.38)
+}
+
+.task_text.task_text3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+    /*border-left: 1px solid white;*/
+}
+
+.task_text.task-user {
+    /*border-left: 1px solid white;*/
+}
+
+.date {
+    width: 125px;
+    height: 60px;
+    color: #003366;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    border-right: 1px solid white;
+}
+
+.date.date2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+    background-color: rgba(153, 153, 153, 0.38)
+}
+
+.date.date2.date3 {
+    border-right: none;
+}
+
+.date.date3 {
+    border-right: none
+}
+
+.rank {
+    width: 45px;
+    height: 60px;
+    color: #003366;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    float: left;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rank.rank2 {
+    color: tomato;
+    width: 105px;
+    background-color: rgba(153, 153, 153, 0.38)
+}
+
+
+.vote-up {
+    width: 30px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vote-down {
+    width: 30px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.delete-btn{
+    width: 75px;
+    height: 60px;
+    color: #003366;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    float: left;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.deleting {
+    width: 75px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+}
+
+.tasks-user {
+    width: 1060px;
+    margin: auto;
+}
+
+#signup {
+    color: red;
+}
+
+#show {
+    color: red;
+}
+
+.signupfield {
+    float: left;
+    width: 300px;
+    height: 40px;
+    border: solid;
+    border-color: #bbccdd;
+    font-size: 15px;
+}
+
+.signupbox {
+    width: 310px;
+    margin: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+    border: solid;
+    border-color: black;
+}
+
+
+
+
+
+
+.taskstyle {
+    font-weight: 600;
+    color: white;
+}
+
+.nametimeborder {
+    color: greenyellow;
+}
+
+.acenter {
+    padding: 0 20px 0 50px;
+}
+
+
+
+
+/*a.vote-up {*/
+    /*display: inline-block;*/
+    /*background-image: url("../static/img/chwM4.png");*/
+/*}*/
+
+

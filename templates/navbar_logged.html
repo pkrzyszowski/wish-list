@@ -1,0 +1,16 @@
+{% load static %}
+<div class="header-container">
+    <div class="logo"><a href="{% url 'index' %}"><img src="{% static "img/wishlistlogo.png" %}" width="290px"/></a></div>
+{#                <div><a href="{% url 'increase-points' user_id=user.id %}">Increase<br>+ 5 points</a></div>#}
+        <div id="navbar-container">
+            <form action="{% url 'logout' %}"><div class="button-header"><input type="submit" class="button" value="LOG OUT"></div></form>
+            <div class="username-header"><span>{{ username }}</span></div>
+            <div class="avatar-header">
+                {% if image %}
+                    <img class="img-circle" src="{{ image.url }}" height="70px" width="70px">
+                {% endif %}
+            </div>
+            <div class="points">{{ points }}</div>
+            <div class="wishpoints">WISH<br>POINTS</div>
+        </div>
+</div>

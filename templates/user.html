@@ -1,0 +1,27 @@
+{% extends "home.html"%}
+{% load static %}
+
+
+{% block login %}
+    {% include 'navbar_logged.html' %}
+{% endblock %}
+
+{% block content %}
+    {% block tasklist %}
+        <div id="show-wishes">
+        <div id="all-wishes-container">
+        {% for task in tasks %}
+                <div id="wish-container">
+                    <div class="middle-field">
+                            <div class="task-text">{{ task.task_text }}</div>
+                            <div class="usr-date">
+                                <div class="calendar-padding"><img src="{% static "img/calendar.png" %}" width="15px"/></div>
+                                <div class="date">Added {{ task.creation_date|timesince }} ago</div>
+                            </div>
+                        </div>
+                </div>
+        {% endfor %}
+        </div>
+        </div>
+    {% endblock %}
+{% endblock content %}

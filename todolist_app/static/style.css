@@ -1,0 +1,506 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: #a6a6a6;
+}
+
+header {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+
+.header-container {
+    width: 1150px;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:link {
+    color: rgba(53, 113, 255, 0.74);
+}
+
+a:visited {
+    color: rgba(3, 25, 255, 0.74);
+}
+
+/*form#add-wish {*/
+    /*overflow: auto;*/
+/*}*/
+
+#taskbox-container {
+    padding-top: 150px;
+    width: 1150px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.task-box {
+    padding-left: 10px;
+    width: 490px;
+    font-size: 40px;
+    height: 150px;
+    border: solid;
+    border-color: white;
+    background-color: lightgray;
+    border-radius: 5px;
+    float: left;
+    color: white;
+    opacity: 0.65;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.task-box:hover {
+    opacity: 1;
+}
+
+.button-add {
+    width: 225px;
+    height: 150px;
+    float: left;
+    padding-left: 18px;
+    padding-top: 5px;
+}
+
+.btn-add {
+    width: 225px;
+    height: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: #003366;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 0.65;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.btn-add:hover {
+    opacity: 1;
+}
+
+#all-wishes-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 1150px;
+    margin: auto;
+
+}
+
+#all-wishes-container > :nth-of-type(even) {
+    background: #f1f1f1;
+}
+
+#wish-container {
+    overflow:hidden;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+#center-img {
+    padding: 30px 55px 30px 55px;
+}
+
+.middle-field {
+    width: 800px;
+    height: 150px;
+    float: left;
+}
+
+.usr-date {
+    display: table;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 20px;
+    display: table-cell;
+}
+
+.task-text {
+    height: 40px;
+    padding-top: 35px;
+    color: orangered;
+    font-size: 20px;
+    overflow: auto;
+}
+
+/*.task-text:hover {*/
+    /*font-size: 200%;*/
+/*}*/
+
+.date {
+    color: gray;
+    font-size: 15px;
+    display: table-cell;
+    padding-left: 10px;
+}
+
+.calendar-padding {
+    padding: 5px 0 0 30px;
+    display: table-cell;
+}
+
+.right-field {
+    width: 100px;
+    height: 150px;
+    float: left;
+    text-align: center;
+}
+
+.vote-up {
+    padding-top: 25px;
+    height: 24px;
+}
+
+
+.vote-down {
+    height: 24px;
+}
+
+.rank {
+    color: rgba(60, 63, 65, 0.65);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.delete-btn{
+    height: 150px;
+    width: 50px;
+    float: left;
+}
+
+#img-btn {
+    float: right;
+    padding: 5px 5px 0 0;
+    transition: width 0.5s;
+}
+
+#img-btn:hover {
+    width: 30px;
+}
+
+.signupfields-container {
+    width: 306px;
+    /*float: left;*/
+}
+
+.signupfield {
+    width: 300px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.signupbox {
+    width: 306px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title-button {
+    padding-top: 75px;
+    width: 306px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title-wish-list {
+    /*padding-top: 70px;*/
+    text-align: center;
+    font-size: 50px;
+    width: 306px;
+    color: white;
+    font-weight: bold;
+    /*float: left;*/
+}
+
+#new-to-wishlist {
+    padding-left: 115px;
+    cursor: pointer;
+}
+
+.signup-button{
+    padding-top: 10px;
+    padding-left: 58px;
+}
+
+#show-wishes {
+    display: none;
+}
+
+#register-form {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*?*/
+/**/
+/**/
+/**/
+/**/
+
+
+form#login-form {
+    overflow: auto;
+}
+
+.login-field {
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #bbccdd;
+    height: 30px;
+    width: 175px;
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+    padding-left: 5px;
+}
+
+.login-fields {
+    height: 80px;
+    float: right;
+    padding-top: 23px;
+}
+
+.logo {
+    padding-top: 10px;
+    float: left;
+}
+
+#navbar-container {
+    width: 600px;
+    float: right;
+    height: 80px;
+}
+
+.username-header {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    float:right;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+.avatar-header {
+    height: 80px;
+    border: none;
+    float: right;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.wishpoints {
+    font-size: 20px;
+    float: right;
+    padding-top: 18px;
+    padding-right: 5px;
+    text-align: right;
+    line-height: 125%;
+}
+
+.points {
+    float: right;
+    font-size: 60px;
+    padding-right: 15px;
+    /*background-clip:content-box;*/
+}
+
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid dimgray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*.button:hover {*/
+  /*background-color: lightgray;*/
+/*}*/
+
+.button-header {
+    height: 80px;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.center-button {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.break {
+    height: 25px;
+}
+
+.break2 {
+    height: 50px;
+}
+
+
+
+.username.username2 {
+    color: tomato;
+    background-color: rgba(153, 153, 153, 0.38);
+
+}
+
+.task_text.task_text2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+    background-color: rgba(153, 153, 153, 0.38)
+}
+
+.task_text.task_text3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+    /*border-left: 1px solid white;*/
+}
+
+.task_text.task-user {
+    /*border-left: 1px solid white;*/
+}
+
+
+
+.date.date2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+    background-color: rgba(153, 153, 153, 0.38)
+}
+
+.date.date2.date3 {
+    border-right: none;
+}
+
+.date.date3 {
+    border-right: none
+}
+
+
+.rank.rank2 {
+    color: tomato;
+    width: 105px;
+    background-color: rgba(153, 153, 153, 0.38)
+}
+
+
+
+
+.deleting {
+    width: 75px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid white;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+}
+
+.tasks-user {
+    width: 1060px;
+    margin: auto;
+}
+
+#signup {
+    color: red;
+}
+
+
+
+
+

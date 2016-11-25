@@ -1,0 +1,67 @@
+{% extends "home.html" %}
+{% load static %}
+
+
+{% block login %}
+    {% include 'navbar_logged.html' %}
+{% endblock %}
+
+{#    <div class="clearfix"></div>#}
+{##}
+{#    <div class="break"></div>#}
+
+    {% block tasktext %}
+    <form action="{% url 'submit' %}" method="post" id="add-wish">
+        <div class="center-taskbox">
+            {% for field in task_box %}{% csrf_token %}
+                {{ field }}
+            {% endfor %}
+        </div>
+{#        <div class="break"></div>#}
+        <div class="center-button"><input type="submit" class="button" value="ADD WISH"></div>
+    </form>
+    {% endblock %}
+
+{#    <div class="break2"></div>#}
+
+    {% block tasklist %}
+    <div class="tasks">
+        <div class="avatar"></div>
+        <div class="username username2">Username</div>
+        <div class="task_text task_text2">Wish</div>
+        <div class="date date2">Added</div>
+{#        <div class="vote-up"></div>#}
+        <div class="rank rank2">Rank</div>
+{#        <div class="vote-down"></div>#}
+        <div class="deleting"></div>
+
+        <div class="clearfix"></div>
+
+        {% for task in tasks %}
+            <div id="container">
+                <div class="avatar"><img class="img-circle" src="{{ task.user.profile.image.url }}" height="45px" width="45px"></div>
+                <div class="username"><a href="{% url 'profile' user_id=task.user.id %}">{{ task.user.username }}</a></div>
+                <div class="task_text">{{ task.task_text }}</div>
+                <div class="date">{{ task.creation_date|timesince }}<br>ago</div>
+                <div class="vote-up">
+                    {% if not task.user == request.user %}
+                        <a href="{% url 'vote-up' wish_id=task.id %}"><img src="{% static "img/chwM4.png" %}" width="30px"/></a>
+                    {% endif %}
+                </div>
+                <div class="rank">{{ task.rank }}</div>
+                <div class="vote-down">
+                    {% if not task.user == request.user %}
+                        <a href="{% url 'vote-down' wish_id=task.id %}"><img src="{% static "img/5MByj.png" %}" width="30px"/></a>
+                    {% endif %}
+                </div>
+                <div class="delete-btn">
+                    {% if task.user == request.user %}
+                        <a href="{% url 'delete' wish_id=task.id %}"><img src="{% static "img/delete.png" %}" width="25px"/></a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+</body>
+</html>
